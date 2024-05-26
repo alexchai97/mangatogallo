@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ==== RESET CSS === */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* ==== MY CSS === */
+
+body {
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+.tracking-in-expand {
+    -webkit-animation: tracking-in-expand 1s cubic-bezier(0.2, 0, 0, 1) both;
+    animation: tracking-in-expand 1s cubic-bezier(0.2, 0, 0, 1) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    -webkit-animation: fade-in 3s cubic-bezier(0.2, 0, 0, 1) both;
+    animation: fade-in 3s cubic-bezier(0.2, 0, 0, 1) both;
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.heartbeat {
+    -webkit-animation: heartbeat 3s ease-in-out infinite both;
+    animation: heartbeat 3s ease-in-out infinite both;
+}
+
+@-webkit-keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+
+.delay-100 {
+    animation-delay: 100ms;
+}
+
+.delay-200 {
+    animation-delay: 200ms;
+}
+
+.delay-300 {
+    animation-delay: 300ms;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Libre Baskerville';
+    font-weight: 400;
+    margin-bottom: 0.5em;
+
+    color: #948C89;
+}
+
+p {
+    color: #999;
+    font-weight: 300;
+}
+
+html {
+    font-size: clamp(0.875rem, 0.625rem + 0.8vi, 1.125rem);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3.053rem;
+    /* 48.8px */
+}
+
+h2 {
+    font-size: 2.442rem;
+    /* 39.04px */
+}
+
+h3 {
+    font-size: 1.954rem;
+    /* 31.2px */
+}
+
+h4 {
+    font-size: 1.563rem;
+    /* 24.96px */
+}
+
+h5 {
+    font-size: 1.250rem;
+    /* 20px */
+}
+
+small {
+    font-size: 0.800rem;
+    /* 12.8px */
+}
+
+.text-center {
+    text-align: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 1rem;
+
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(32, 20, 20, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.logo {
+    margin-bottom: 1rem;
+    display: block;
+    object-fit: contain;
+}
+
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    position: relative;
+    bottom: 0;
+    padding: .5rem;
+    transition: 300ms ease-out;
+}
+
+nav a:hover {
+    opacity: 0.6;
+    bottom: 3px;
+    transition: 300ms ease-out;
+}
+
+#hero {
+    height: clamp(500px, 75vh, 750px);
+    background-image: linear-gradient(0deg, #00000033, #00000033), url("https://i.ibb.co/nfYXdpf/Wedding-Couple-s-Engagement-Photos.jpg");
+    background-size: cover;
+    background-position: 78% 50%;
+
+    background-attachment: fixed;
+
+    align-items: center;
+
+    padding: 1rem 5rem;
+    display: flex;
+
+    color: white;
+    text-shadow: 2px 2px 4px #555555AA;
+
+}
+
+.pre-text {
+    letter-spacing: 5px;
+    font-family: 'Libre Baskerville';
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.hero-title {
+    line-height: 120%;
+    margin-bottom: .5rem;
+    color: #FFF;
+}
+
+.hero-text {
+    margin-bottom: 1.5rem;
+    color: #FFF;
+}
+
+.button {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    display: block;
+    padding: .5rem 2rem;
+
+    color: white;
+    text-decoration: none;
+
+    border: 1px #FFF solid;
+    border-radius: .5rem;
+    width: fit-content;
+
+    font-family: 'Libre Baskerville', serif;
+    user-select: none;
+    cursor: pointer;
+
+    white-space: nowrap;
+    text-align: center;
+
+    transition-duration: 300ms;
+}
+
+.button:hover {
+    background-color: #DDD;
+    border: 1px #DDD solid;
+    color: #555;
+    text-shadow: none;
+    transition-duration: 300ms;
+}
+
+.button:active {
+    opacity: .6;
+    transform: scale(1.02);
+    transition-duration: 50ms;
+}
+
+.button:focus {
+    background-color: #DDD;
+    border: double;
+    color: #555;
+    text-shadow: none;
+    transition-duration: 300ms;
+}
+
+.title {
+
+    font-family: 'Libre Baskerville';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+
+    margin-top: 2rem;
+
+
+}
+
+section {
+    padding: 2rem 5rem;
+}
+
+#benefits {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 1rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+
+    justify-content: center;
+}
+
+.card {
+    padding: 1rem;
+}
+
+.card>* {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 20px;
+    margin-bottom: .25em;
+}
+
+.card-img {
+    border-radius: 16px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    height: 240px;
+    width: 100%;
+}
+
+.card-text {
+    text-align: justify;
+}
+
+#story {
+    grid-template-columns: max-content 1fr;
+    gap: 3rem;
+}
+
+.img-rounded {
+    border-radius: 1em;
+    margin-inline: auto;
+}
+
+#mariana {
+    max-width: 300px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#CTA {
+    background-image: linear-gradient(0deg, #00000088, #00000055), url("https://i.ibb.co/FhPNmSQ/ring-in-a-beige-gift-box.jpg");
+
+    min-height: 500px;
+    background-size: cover;
+    background-position: 50% 35%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#CTA>* {
+    color: #FFF;
+}
+
+.cta-title {
+    margin-bottom: .2em;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+footer * {
+    color: #FFF;
+}
+
+footer {
+    background-color: #4B3D38;
+    padding: 2rem;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+@media screen and (max-width: 720px) {
+    #hero {
+        padding: 3rem 1rem;
+    }
+
+    #hero * {
+        text-align: center;
+    }
+
+    #hero .button {
+        margin: 0 auto;
+    }
+
+    #hero {
+        align-items: end;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .text>* {
+        text-align: center;
+    }
+
+    .text {
+        margin-top: 1rem;
+    }
+
+    .footer-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+
+}
