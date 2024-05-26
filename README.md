@@ -26,7 +26,7 @@ Welcome to the Mangata & Gallo Jewelry E-commerce Website project! This endeavor
 
 **Demo:**
 
-[Link to Live Demo](mangatogallo.xcalex.com)
+[Link to Live Demo](https://mangatogallo.xcalex.com)
 
 **Note:**
 
