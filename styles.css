@@ -538,6 +538,10 @@ footer {
         padding: 2rem;
     }
 
+    .button {
+        padding: 1.25rem 2rem;
+    }
+
 }
 
 @media screen and (max-width: 1200px) {
