@@ -5,7 +5,8 @@
 *::before,
 *::after {
     box-sizing: border-box;
-}
+}
+
 
 * {
     margin: 0;
@@ -347,6 +348,11 @@ nav a:hover {
     color: white;
     text-shadow: 2px 2px 4px #555555AA;
 
+}
+
+
+#hero container {
+    margin-top: 110.64px;
 }
 
 .pre-text {
